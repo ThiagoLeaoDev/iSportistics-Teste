@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/Chart.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../pages/Chart.js"></script>
+    <title>Teste Front-End</title>
+</head>
+<body>
+    <div class="form-top">
+        <div class="container-inputs">
+            <input type="text" class="form-control" id="input-firstName" placeholder="First Name">
+            <input type="text" class="form-control" id="input-lastName" placeholder="Last Name">
+            <input type="text" class="form-control" id="input-participation" placeholder="Participation">
+            <button type="button" class="btn btn-outline-light" id="button-send">Light</button>
+        </div>
+    </div>
+    <div class="container-title">
+        <h2 class="title">DATA</h2>
+        <h4 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+    </div>
+    <div class="content-dashboard">
+        <div class="left-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Participation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="number">1</td>
+                        <td>Carlos</td>
+                        <td>Moura</td>
+                        <td class="percentage">5%</td>
+                    </tr>
+                    <tr>
+                        <td class="number">2</td>
+                        <td>Fernanda</td>
+                        <td>Oliveira</td>
+                        <td class="percentage">15%</td>
+                    </tr>
+                    <tr>
+                        <td class="number">3</td>
+                        <td>Hugo</td>
+                        <td>Silva</td>
+                        <td class="percentage">20%</td>
+                    </tr>
+                    <tr>
+                        <td class="number">4</td>
+                        <td>Eliza</td>
+                        <td>Souza</td>
+                        <td class="percentage">20%</td>
+                    </tr>
+                    <tr>
+                        <td class="number">5</td>
+                        <td>Anderson</td>
+                        <td>Santos</td>
+                        <td class="percentage">40%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="right-pie">
+            <div class="card-doughnut">
+                <canvas id="data-doughtnut" width="900" height="500"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../pages/doughnut.js"></script>
+</body>
+</html>
